@@ -42,3 +42,5 @@ backups/
 data/evaluation/*.png
 data/backend_*.log
 data/e2e_run_*.log
+
+.vercel

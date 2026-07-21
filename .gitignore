@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+data/app_users.json
+
+# OS
+Thumbs.db
+.DS_Store
+~$*
+
+# Tooling (local config)
+.claude/
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# Build artifact: vector index (rebuild bằng: python -m src.task4_chunking_indexing)
+data/index/
+chroma_db/
+
+# Local database files and uploads
+data/*.json
+!data/standardized/**/*.json
+data/hr_request_attachments/
+data/announcement_attachments/
+data/landing/uploads/
+backups/
+data/evaluation/*.png
+data/backend_*.log
+data/e2e_run_*.log

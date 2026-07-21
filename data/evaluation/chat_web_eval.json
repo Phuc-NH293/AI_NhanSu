@@ -1,0 +1,324 @@
+[
+  {
+    "name": "greeting",
+    "turns": [
+      "chào bạn"
+    ],
+    "answers": [
+      "Trợ lý HR\nChào Quản trị viên, mình là trợ lý HR. Mình có thể hỗ trợ về nghỉ phép, nghỉ việc, bảo hiểm, lương thưởng, phúc lợi và các thủ tục nội bộ. Bạn cứ hỏi tự nhiên như đang chat với HR nhé.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "natural_sick",
+    "turns": [
+      "tôi bị ốm thì phải làm gì"
+    ],
+    "answers": [
+      "Trợ lý HR\nNếu bạn đang bị ốm, trước hết hãy ưu tiên sức khỏe; nếu triệu chứng nặng hoặc bất thường, bạn nên liên hệ cơ sở y tế. Về phía công việc, bạn có thể xử lý như sau:\nCác bước nên làm:\nBáo cho quản lý trực tiếp sớm nhất có thể.\nChuẩn bị giấy tờ y tế nếu thời gian nghỉ từ 2 ngày liên tiếp trở lên.\nBổ sung hồ sơ cho HR hoặc theo quy trình nội bộ để được ghi nhận đúng chính sách.\nBạn có muốn mình kiểm tra trường hợp nghỉ ốm cụ thể của bạn cần chuẩn bị giấy tờ gì không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "sick_policy",
+    "turns": [
+      "chính sách nghỉ ốm sao"
+    ],
+    "answers": [
+      "Trợ lý HR\nNếu nghỉ ốm từ 2 ngày liên tiếp trở lên, bạn cần chuẩn bị giấy xác nhận y tế hoặc giấy nghỉ hưởng bảo hiểm xã hội.\nCác bước nên làm:\nBáo cho quản lý trực tiếp sớm nhất có thể.\nChuẩn bị giấy tờ y tế nếu thời gian nghỉ từ 2 ngày liên tiếp trở lên.\nBổ sung hồ sơ cho HR hoặc theo quy trình nội bộ để được ghi nhận đúng chính sách.\nBạn có muốn mình kiểm tra trường hợp nghỉ ốm cụ thể của bạn cần chuẩn bị giấy tờ gì không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "annual_leave_amount",
+    "turns": [
+      "nhân viên có bao nhiêu ngày phép năm"
+    ],
+    "answers": [
+      "Trợ lý HR\nNhân viên toàn thời gian được hưởng 12 ngày nghỉ phép năm có lương sau khi hoàn thành thời gian thử việc.\nBạn muốn mình hướng dẫn thêm cách kiểm tra số ngày phép còn lại hay cách tạo đơn nghỉ?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "leave_intake",
+    "turns": [
+      "tôi muốn xin nghỉ phép"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình sẽ tạo đơn nghỉ giúp bạn. Trước hết, bạn cho mình xin khoảng thời gian nghỉ theo dạng dd/mm hoặc dd/mm/yyyy - dd/mm/yyyy nhé.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "cancel_leave",
+    "turns": [
+      "tôi muốn xin nghỉ phép",
+      "ok t ko muốn nữa"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình sẽ tạo đơn nghỉ giúp bạn. Trước hết, bạn cho mình xin khoảng thời gian nghỉ theo dạng dd/mm hoặc dd/mm/yyyy - dd/mm/yyyy nhé.\nSao chép",
+      "Trợ lý HR\nMình đã dừng luồng tạo đơn nghỉ. Khi nào cần làm lại, bạn chỉ cần nhắn mình là được.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "manager_pending",
+    "turns": [
+      "sếp chưa duyệt đơn của tôi thì làm sao"
+    ],
+    "answers": [
+      "Trợ lý HR\nBạn nên kiểm tra trạng thái đơn trên HR Portal trước.\nNếu đơn vẫn đang chờ duyệt, hãy nhắc quản lý trực tiếp và gửi lại thời gian nghỉ dự kiến.\nNếu sắp đến ngày nghỉ hoặc đơn bị treo bất thường, liên hệ HR để kiểm tra luồng phê duyệt.\nKhông nên tự nghỉ khi chưa có xác nhận, trừ tình huống khẩn cấp; khi đó cần báo quản lý ngay.\nBạn muốn mình hướng dẫn cách nhắn quản lý hay kiểm tra trạng thái đơn?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "cannot_work",
+    "turns": [
+      "mai tôi không đi làm được thì báo ai"
+    ],
+    "answers": [
+      "Trợ lý HR\nBạn hãy báo cho quản lý trực tiếp sớm nhất có thể, tốt nhất trước giờ làm việc. Cho mình biết bạn vắng do ốm, việc khẩn cấp hay muốn xin nghỉ phép để mình hướng dẫn đúng thủ tục và giấy tờ cần bổ sung nhé.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "attendance",
+    "turns": [
+      "tôi quên chấm công hôm qua"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình đã rà trong chính sách hiện có và thấy các ý liên quan nhất như sau:\nTrường hợp quên chấm công, nhân viên cần gửi đơn giải trình trên HR Portal trong vòng 2 ngày làm việc.\nNếu bạn muốn, mình có thể diễn giải lại thành quy trình từng bước hoặc checklist ngắn theo đúng trường hợp của bạn.\nBạn có muốn mình hướng dẫn xử lý đúng tình huống chấm công hoặc OT của bạn không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "overtime",
+    "turns": [
+      "làm thêm giờ thì đăng ký thế nào"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình đã rà trong chính sách hiện có và thấy các ý liên quan nhất như sau:\nHR004 - Chính sách làm thêm giờ.\nNhân viên chỉ được tính làm thêm giờ khi có yêu cầu công việc được quản lý phê duyệt trước.\nTiền làm thêm giờ được tính theo quy định hiện hành và quy chế lương thưởng của trường.\nNếu bạn muốn, mình có thể diễn giải lại thành quy trình từng bước hoặc checklist ngắn theo đúng trường hợp của bạn.\nBạn có muốn mình hướng dẫn xử lý đúng tình huống chấm công hoặc OT của bạn không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "insurance",
+    "turns": [
+      "nhân viên mới tham gia bảo hiểm thế nào"
+    ],
+    "answers": [
+      "Trợ lý HR\nVới nhân viên mới, bạn nên ưu tiên kiểm tra các nội dung sau:\nThời gian thử việc, tiêu chí đánh giá và thời điểm thông báo kết quả.\nMốc tham gia BHXH, BHYT, BHTN và các giấy tờ cần nộp.\nĐiều kiện đăng ký phúc lợi như khám sức khỏe, hỗ trợ học phí, gửi xe hoặc ăn trưa nếu có áp dụng.\nCác khóa đào tạo nội bộ bắt buộc theo vị trí.\nKênh liên hệ HR khi cần hỗ trợ hoặc phản ánh vấn đề phát sinh.\nNếu bạn muốn, mình có thể tách riêng thành checklist hồ sơ cần chuẩn bị cho ngày nhận việc.\nBạn đang cần mình hỗ trợ thêm về hồ sơ, quyền lợi hay thủ tục bảo hiểm?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "resignation",
+    "turns": [
+      "tôi muốn nghỉ việc cần làm gì"
+    ],
+    "answers": [
+      "Trợ lý HR\nHiện mình chưa tìm thấy căn cứ đủ rõ trong tài liệu HR hiện có để trả lời chính xác câu hỏi này.\nHiện tài liệu HR đang có chưa mô tả đủ chính sách nghỉ việc hoặc chấm dứt hợp đồng. Để xử lý đúng, bạn nên xác nhận với HR các mục: thời hạn báo trước, quy trình bàn giao, phép năm còn lại, quyết toán lương/phụ cấp, hồ sơ BHXH/BHYT và ngày làm việc cuối cùng.\nBạn còn cần mình hỗ trợ thêm nội dung nào về trường hợp này không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "onboarding",
+    "turns": [
+      "mới vào công ty tôi cần chuẩn bị gì"
+    ],
+    "answers": [
+      "Trợ lý HR\nVới nhân viên mới, bạn nên ưu tiên kiểm tra các nội dung sau:\nThời gian thử việc, tiêu chí đánh giá và thời điểm thông báo kết quả.\nMốc tham gia BHXH, BHYT, BHTN và các giấy tờ cần nộp.\nĐiều kiện đăng ký phúc lợi như khám sức khỏe, hỗ trợ học phí, gửi xe hoặc ăn trưa nếu có áp dụng.\nCác khóa đào tạo nội bộ bắt buộc theo vị trí.\nKênh liên hệ HR khi cần hỗ trợ hoặc phản ánh vấn đề phát sinh.\nNếu bạn muốn, mình có thể tách riêng thành checklist hồ sơ cần chuẩn bị cho ngày nhận việc.\nBạn còn cần mình hỗ trợ thêm nội dung nào về trường hợp này không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "benefit",
+    "turns": [
+      "công ty có phúc lợi gì cho nhân viên"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình đã rà trong chính sách hiện có và thấy các ý liên quan nhất như sau:\nHR008 - Quy trình đăng ký phúc lợi.\nNhân viên có thể đăng ký các phúc lợi nội bộ như khám sức khỏe định kỳ, hỗ trợ học phí, phụ cấp gửi xe hoặc phụ cấp ăn trưa nếu đủ điều kiện.\nNếu bạn muốn, mình có thể diễn giải lại thành quy trình từng bước hoặc checklist ngắn theo đúng trường hợp của bạn.\nBạn còn cần mình hỗ trợ thêm nội dung nào về trường hợp này không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "salary_dispute",
+    "turns": [
+      "lương của tôi bị tính sai và đang tranh chấp"
+    ],
+    "answers": [
+      "Trợ lý HR\nHiện mình chưa tìm thấy căn cứ đủ rõ trong tài liệu HR hiện có để trả lời chính xác câu hỏi này.\nĐây là tình huống nhạy cảm và cần xác minh hồ sơ cụ thể. Trợ lý không thay HR ra quyết định, nên bạn vui lòng chuyển tiếp HR hoặc quản lý có thẩm quyền.\nBạn còn cần mình hỗ trợ thêm nội dung nào về trường hợp này không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "incorrect_salary_deduction",
+    "turns": [
+      "tôi bị trừ lương sai thì làm sao"
+    ],
+    "answers": [
+      "Trợ lý HR\nNếu lương bị tính hoặc khấu trừ sai, bạn nên phản ánh qua phòng HR hoặc quản lý trực tiếp để được đối soát.\nGhi rõ kỳ lương và khoản đang sai: lương cơ bản, phụ cấp, OT, thuế hoặc khoản khấu trừ.\nChuẩn bị bảng lương và dữ liệu chấm công liên quan; không gửi số tài khoản hoặc thông tin nhạy cảm qua chat.\nNếu chưa được xử lý, yêu cầu HR xác nhận tình trạng và thời gian phản hồi qua kênh chính thức.\nBạn đang bị sai ở khoản nào để mình giúp bạn lập checklist đối soát?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "other_salary",
+    "turns": [
+      "cho tôi biết lương của đồng nghiệp"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình không thể tiết lộ dữ liệu cá nhân hoặc hồ sơ nhân sự của người khác. Nếu bạn có thẩm quyền xử lý, vui lòng dùng kênh HR chính thức.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "bitcoin",
+    "turns": [
+      "giá bitcoin hôm nay bao nhiêu"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình hiện chỉ hỗ trợ các câu hỏi liên quan đến chính sách, thủ tục và nghiệp vụ HR nội bộ. Bạn thử hỏi lại theo hướng nhân sự nhé.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "programming",
+    "turns": [
+      "viết code python cho tôi"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình hiện chỉ hỗ trợ các câu hỏi liên quan đến chính sách, thủ tục và nghiệp vụ HR nội bộ. Bạn thử hỏi lại theo hướng nhân sự nhé.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "wifi_secret",
+    "turns": [
+      "mật khẩu wifi công ty là gì"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình hiện chỉ hỗ trợ các câu hỏi liên quan đến chính sách, thủ tục và nghiệp vụ HR nội bộ. Bạn thử hỏi lại theo hướng nhân sự nhé.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "weather",
+    "turns": [
+      "thời tiết hôm nay thế nào"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình hiện chỉ hỗ trợ các câu hỏi liên quan đến chính sách, thủ tục và nghiệp vụ HR nội bộ. Bạn thử hỏi lại theo hướng nhân sự nhé.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "follow_up_offer",
+    "turns": [
+      "quy trình chấm công như thế nào"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình đã rà trong chính sách hiện có và thấy các ý liên quan nhất như sau:\nHR005 - Quy trình chấm công.\nTrường hợp quên chấm công, nhân viên cần gửi đơn giải trình trên HR Portal trong vòng 2 ngày làm việc.\nNếu bạn muốn, mình có thể diễn giải lại thành quy trình từng bước hoặc checklist ngắn theo đúng trường hợp của bạn.\nBạn có muốn mình hướng dẫn xử lý đúng tình huống chấm công hoặc OT của bạn không?\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "ack_after_answer",
+    "turns": [
+      "quy trình chấm công như thế nào",
+      "ok"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình đã rà trong chính sách hiện có và thấy các ý liên quan nhất như sau:\nHR005 - Quy trình chấm công.\nTrường hợp quên chấm công, nhân viên cần gửi đơn giải trình trên HR Portal trong vòng 2 ngày làm việc.\nNếu bạn muốn, mình có thể diễn giải lại thành quy trình từng bước hoặc checklist ngắn theo đúng trường hợp của bạn.\nBạn có muốn mình hướng dẫn xử lý đúng tình huống chấm công hoặc OT của bạn không?\nSao chép",
+      "Trợ lý HR\nOk nhé. Nếu cần làm rõ thêm phần vừa trao đổi, bạn cứ nhắn tiếp mình.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "understood_after_answer",
+    "turns": [
+      "chính sách nghỉ ốm sao",
+      "hiểu rồi"
+    ],
+    "answers": [
+      "Trợ lý HR\nNếu nghỉ ốm từ 2 ngày liên tiếp trở lên, bạn cần chuẩn bị giấy xác nhận y tế hoặc giấy nghỉ hưởng bảo hiểm xã hội.\nCác bước nên làm:\nBáo cho quản lý trực tiếp sớm nhất có thể.\nChuẩn bị giấy tờ y tế nếu thời gian nghỉ từ 2 ngày liên tiếp trở lên.\nBổ sung hồ sơ cho HR hoặc theo quy trình nội bộ để được ghi nhận đúng chính sách.\nBạn có muốn mình kiểm tra trường hợp nghỉ ốm cụ thể của bạn cần chuẩn bị giấy tờ gì không?\nSao chép",
+      "Trợ lý HR\nOk nhé. Nếu cần làm rõ thêm phần vừa trao đổi, bạn cứ nhắn tiếp mình.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "thanks_after_answer",
+    "turns": [
+      "nhân viên có bao nhiêu ngày phép năm",
+      "cảm ơn bạn"
+    ],
+    "answers": [
+      "Trợ lý HR\nNhân viên toàn thời gian được hưởng 12 ngày nghỉ phép năm có lương sau khi hoàn thành thời gian thử việc.\nBạn muốn mình hướng dẫn thêm cách kiểm tra số ngày phép còn lại hay cách tạo đơn nghỉ?\nSao chép",
+      "Trợ lý HR\nKhông có gì nhé. Khi nào cần hỏi thêm, bạn cứ nhắn mình.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  },
+  {
+    "name": "close_conversation",
+    "turns": [
+      "quy trình chấm công như thế nào",
+      "không cần nữa"
+    ],
+    "answers": [
+      "Trợ lý HR\nMình đã rà trong chính sách hiện có và thấy các ý liên quan nhất như sau:\nHR005 - Quy trình chấm công.\nTrường hợp quên chấm công, nhân viên cần gửi đơn giải trình trên HR Portal trong vòng 2 ngày làm việc.\nNếu bạn muốn, mình có thể diễn giải lại thành quy trình từng bước hoặc checklist ngắn theo đúng trường hợp của bạn.\nBạn có muốn mình hướng dẫn xử lý đúng tình huống chấm công hoặc OT của bạn không?\nSao chép",
+      "Trợ lý HR\nOk, mình dừng tại đây nhé. Khi nào cần hỗ trợ thêm, bạn cứ nhắn mình.\nSao chép"
+    ],
+    "passed": true,
+    "failures": [],
+    "error": null
+  }
+]

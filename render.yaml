@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: hr-helpdesk-ai
+    runtime: docker
+    region: singapore
+    plan: free
+    autoDeployTrigger: commit
+    healthCheckPath: /health
+    envVars:
+      - key: AUTH_SECRET
+        generateValue: true
+      - key: AUTH_TOKEN_TTL_SECONDS
+        value: "604800"
+      - key: ALLOW_PUBLIC_REGISTRATION
+        value: "0"
+      - key: ADMIN_EMAIL
+        value: admin@lesson.local
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: LLM_MODEL
+        value: ""
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: GEMINI_API_BASE
+        value: https://generativelanguage.googleapis.com/v1beta
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_BASE_URL
+        value: ""
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: OCR_ENABLED
+        value: "0"
+      - key: OCR_PROVIDER
+        value: gemini
+      - key: OCR_MAX_PAGES
+        value: "40"
+      - key: OCR_MODEL
+        value: ""

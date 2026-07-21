@@ -1,0 +1,43 @@
+services:
+  hr-helpdesk-ai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hr-helpdesk-ai:local
+    container_name: hr-helpdesk-ai
+    ports:
+      - "8000:8000"
+    environment:
+      PORT: "8000"
+      AUTH_SECRET: ${AUTH_SECRET:-dev-docker-secret-change-me}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@gmail.com}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin123456}
+      ADMIN_NAME: ${ADMIN_NAME:-Quan tri vien}
+      ALLOW_PUBLIC_REGISTRATION: ${ALLOW_PUBLIC_REGISTRATION:-1}
+      HR_DEMO_EMAIL: ${HR_DEMO_EMAIL:-hr.demo@company.local}
+      HR_DEMO_PASSWORD: ${HR_DEMO_PASSWORD:-hr123456}
+      HR_DEMO_NAME: ${HR_DEMO_NAME:-HR Demo}
+      USER_DEMO_EMAIL: ${USER_DEMO_EMAIL:-user.demo@company.local}
+      USER_DEMO_PASSWORD: ${USER_DEMO_PASSWORD:-user123456}
+      USER_DEMO_NAME: ${USER_DEMO_NAME:-User Demo}
+      LLM_PROVIDER: ${LLM_PROVIDER:-gemini}
+      LLM_MODEL: ${LLM_MODEL:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.5-flash}
+      GEMINI_API_BASE: ${GEMINI_API_BASE:-https://generativelanguage.googleapis.com/v1beta}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_BASE_URL: ${OPENAI_BASE_URL:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      OCR_ENABLED: ${OCR_ENABLED:-0}
+      OCR_PROVIDER: ${OCR_PROVIDER:-gemini}
+      OCR_MAX_PAGES: ${OCR_MAX_PAGES:-40}
+      OCR_MODEL: ${OCR_MODEL:-}
+      DATA_DIR: /app/data
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USERNAME: ${SMTP_USERNAME:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_SENDER: ${SMTP_SENDER:-}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
